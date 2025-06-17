@@ -75,7 +75,7 @@
   --black: #0d0d0d;
 
   /* Brand color assignments */
-  --background: var(--neutral-100);
+  --background: var(--scroll-100);
   --foreground: var(--moloch-800);
   --primary: var(--moloch-400);
   --primary-foreground: var(--white);
@@ -103,9 +103,9 @@
   --sidebar-ring: var(--moloch-400);
 
   /* Typography from Raid Guild Design System */
-  --font-display: 'Roslindale Display', serif;
-  --font-heading: 'Roslindale Display', serif;
-  --font-body: 'Satoshi', 'Inter', Arial, sans-serif;
+  --font-display: 'Maziusdisplay', serif;
+  --font-heading: 'Maziusdisplay', serif;
+  --font-body: 'Goudybookletter 1911', 'Satoshi', 'Inter', Arial, sans-serif;
   --font-mono: 'JetBrains Mono', 'Menlo', 'Monaco', 'Consolas', monospace;
 }
 
@@ -164,4 +164,60 @@ code, pre {
   body {
     @apply bg-background text-foreground;
   }
+}
+
+@font-face {
+  font-family: "Goudybookletter 1911";
+  src: url("https://cdn.prod.website-files.com/673e2986dcf3e7117d0a6953/673e2a993b539fc3d6c511dd_GoudyBookletter1911-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Maziusdisplay;
+  src: url("https://cdn.prod.website-files.com/673e2986dcf3e7117d0a6953/673e2a2ca0b6286a486b917c_MaziusDisplay-ExtraItalicBold.otf") format("opentype");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Maziusdisplay;
+  src: url("https://cdn.prod.website-files.com/673e2986dcf3e7117d0a6953/673e2a2c2d3988752b4dd3c6_MaziusDisplay-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Maziusdisplay;
+  src: url("https://cdn.prod.website-files.com/673e2986dcf3e7117d0a6953/673e2a2c85e4df49a5708bb2_MaziusDisplay-Extraitalic.otf") format("opentype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Maziusdisplay;
+  src: url("https://cdn.prod.website-files.com/673e2986dcf3e7117d0a6953/673e2a2c76c3d7697d479b5b_MaziusDisplay-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Alchemion;
+  src: url("https://cdn.prod.website-files.com/673e2986dcf3e7117d0a6953/6813bfe54a8dc8924b2ce9d5_Alchemion.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Fratelli;
+  src: url("https://cdn.prod.website-files.com/673e2986dcf3e7117d0a6953/6813c00763d4e0dbb5deca33_Fratelli.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }

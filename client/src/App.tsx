@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import beaver from './assets/beaver.svg'
 import { Button } from './components/ui/button'
 import { hcWithType } from 'server/dist/client'
 
@@ -27,30 +26,15 @@ function App() {
   }
 
   return (
-    <div className="max-w-xl mx-auto flex flex-col gap-6 items-center justify-center min-h-screen">
-      <a href="https://github.com/stevedylandev/bhvr" target="_blank">
-        <img
-          src={beaver}
-          className="w-16 h-16 cursor-pointer"
-          alt="beaver logo"
-        />
-      </a>
-      <h1 className="text-5xl font-black">bhvr</h1>
-      <h2 className="text-2xl font-bold">Bun + Hono + Vite + React</h2>
-      <p>A typesafe fullstack monorepo</p>
-      <div className='flex items-center gap-4'>
+    <div className="max-w-xl mx-auto flex flex-col gap-6 items-center justify-center min-h-screen" style={{ background: 'var(--scroll-100)' }}>
+      <h1 className="text-5xl font-black">Artificer</h1>
+      <h2 className="text-2xl font-bold">Context Aware Artificial Intelligence</h2>
+      <p>We connect your AI to real customer data, internal systems, and business processes.</p>
+      <div className='flex items-center'>
         <Button
           onClick={sendRequest}
         >
-          Call API
-        </Button>
-        <Button
-          variant='secondary'
-          asChild
-        >
-          <a target='_blank' href="https://bhvr.dev">
-          Docs
-          </a>
+          Contact Us
         </Button>
       </div>
         {data && (
@@ -61,6 +45,7 @@ function App() {
             </code>
           </pre>
         )}
+        <p>For adventurers struggling to connect AI tools to organizational knowledge, Artificer forges MCP servers that transform generic assistants into context-aware systems. We deliver production ready implementations with enterprise grade security, enabling the full power of your realm's data.</p>
     </div>
   )
 }

@@ -43,71 +43,118 @@
 
 :root {
   --radius: 0.625rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
-  --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
-  --chart-1: oklch(0.646 0.222 41.116);
-  --chart-2: oklch(0.6 0.118 184.704);
-  --chart-3: oklch(0.398 0.07 227.392);
-  --chart-4: oklch(0.828 0.189 84.429);
-  --chart-5: oklch(0.769 0.188 70.08);
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.205 0 0);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
+  /* Colors from Raid Guild Design System */
+  --moloch-100: #fae1eb;
+  --moloch-200: #fec5b8;
+  --moloch-300: #f3b9b0;
+  --moloch-400: #d25c41;
+  --moloch-500: #bd4d29;
+  --moloch-600: #b15312;
+  --moloch-700: #5c2316;
+  --moloch-800: #29180a;
+
+  --scroll-100: #f9f7e7;
+  --scroll-200: #ece5ac;
+  --scroll-300: #e6cc6a;
+  --scroll-400: #d2c141;
+  --scroll-500: #b5a22c;
+  --scroll-600: #837820;
+  --scroll-700: #534a13;
+  --scroll-800: #211807;
+
+  --neutral-100: #f1efee;
+  --neutral-200: #d6c1cd;
+  --neutral-300: #b8a1ac;
+  --neutral-400: #b1a1ba;
+  --neutral-500: #8f6f4b;
+  --neutral-600: #645754;
+  --neutral-700: #413937;
+  --neutral-800: #221d1c;
+
+  --white: #fafafa;
+  --black: #0d0d0d;
+
+  /* Brand color assignments */
+  --background: var(--neutral-100);
+  --foreground: var(--moloch-800);
+  --primary: var(--moloch-400);
+  --primary-foreground: var(--white);
+  --secondary: var(--scroll-400);
+  --secondary-foreground: var(--moloch-800);
+  --muted: var(--neutral-200);
+  --muted-foreground: var(--moloch-700);
+  --accent: var(--scroll-500);
+  --accent-foreground: var(--moloch-800);
+  --destructive: var(--moloch-600);
+  --border: var(--moloch-800);
+  --input: var(--neutral-300);
+  --ring: var(--moloch-400);
+  --card: var(--white);
+  --card-foreground: var(--moloch-800);
+  --popover: var(--white);
+  --popover-foreground: var(--moloch-800);
+  --sidebar: var(--neutral-100);
+  --sidebar-foreground: var(--moloch-800);
+  --sidebar-primary: var(--moloch-400);
+  --sidebar-primary-foreground: var(--white);
+  --sidebar-accent: var(--scroll-400);
+  --sidebar-accent-foreground: var(--moloch-800);
+  --sidebar-border: var(--neutral-300);
+  --sidebar-ring: var(--moloch-400);
+
+  /* Typography from Raid Guild Design System */
+  --font-display: 'Roslindale Display', serif;
+  --font-heading: 'Roslindale Display', serif;
+  --font-body: 'Satoshi', 'Inter', Arial, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Menlo', 'Monaco', 'Consolas', monospace;
 }
 
+body {
+  font-family: var(--font-body);
+  color: var(--foreground);
+  background: var(--background);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+}
+
+.display-lg, .display-md, .display-sm {
+  font-family: var(--font-display);
+}
+
+code, pre {
+  font-family: var(--font-mono);
+}
+
+/* Dark mode (example, can be further refined) */
 .dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.205 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.205 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.922 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.556 0 0);
-  --chart-1: oklch(0.488 0.243 264.376);
-  --chart-2: oklch(0.696 0.17 162.48);
-  --chart-3: oklch(0.769 0.188 70.08);
-  --chart-4: oklch(0.627 0.265 303.9);
-  --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.556 0 0);
+  --background: var(--moloch-800);
+  --foreground: var(--white);
+  --primary: var(--moloch-400);
+  --primary-foreground: var(--white);
+  --secondary: var(--scroll-400);
+  --secondary-foreground: var(--moloch-800);
+  --muted: var(--neutral-700);
+  --muted-foreground: var(--neutral-200);
+  --accent: var(--scroll-500);
+  --accent-foreground: var(--moloch-800);
+  --destructive: var(--moloch-600);
+  --border: var(--neutral-800);
+  --input: var(--neutral-700);
+  --ring: var(--moloch-400);
+  --card: var(--moloch-700);
+  --card-foreground: var(--white);
+  --popover: var(--moloch-700);
+  --popover-foreground: var(--white);
+  --sidebar: var(--moloch-800);
+  --sidebar-foreground: var(--white);
+  --sidebar-primary: var(--moloch-400);
+  --sidebar-primary-foreground: var(--white);
+  --sidebar-accent: var(--scroll-400);
+  --sidebar-accent-foreground: var(--moloch-800);
+  --sidebar-border: var(--neutral-700);
+  --sidebar-ring: var(--moloch-400);
 }
 
 @layer base {

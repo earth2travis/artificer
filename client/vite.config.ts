@@ -12,5 +12,8 @@ export default defineConfig({
       "@shared": path.resolve(__dirname, "../shared/src"),
       "@": path.resolve(__dirname, "./src")
     }
+  },
+  server: {
+    allowedHosts: ['.trycloudflare.com']
   }
 })

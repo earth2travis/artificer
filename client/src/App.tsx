@@ -26,15 +26,16 @@ function App() {
   }
 
   return (
-    <div className="max-w-xl mx-auto flex flex-col gap-6 items-center justify-center min-h-screen" style={{ background: 'var(--scroll-100)' }}>
-      <h1 className="text-5xl font-black">Artificer</h1>
-      <h2 className="text-2xl font-bold">Context Aware Artificial Intelligence</h2>
-      <p>We connect your AI to real customer data, internal systems, and business processes.</p>
+    <div className="max-w-xl mx-auto flex flex-col gap-6 items-center justify-start min-h-screen px-4 md:px-8" style={{ background: 'var(--scroll-100)' }}>
+      <h1 className="text-6xl md:text-5xl font-black font-title">Artificer</h1>
+      <h2 className="text-2xl font-bold">Magical MCP Servers</h2>
+      <p>Stop wasting your AI investment on generic responses. We connect your tools to real customer data, internal systems, and business processes to immediately deliver a measurable ROI.</p>
       <div className='flex items-center'>
         <Button
           onClick={sendRequest}
+          variant='secondary'
         >
-          Contact Us
+          Schedule Free Consultation
         </Button>
       </div>
         {data && (
@@ -45,7 +46,8 @@ function App() {
             </code>
           </pre>
         )}
-        <p>For adventurers struggling to connect AI tools to organizational knowledge, Artificer forges MCP servers that transform generic assistants into context-aware systems. We deliver production ready implementations with enterprise grade security, enabling the full power of your realm's data.</p>
+        <h2 className="text-2xl font-bold">AI That Actually Knows Your Business</h2>
+        <p>For adventurers struggling to connect artificial intelligence to organizational knowledge, Artificer builds MCP servers that transform generic responses into business insights. We deliver secure implementations with enterprise grade protection, granting your AI access to your customers, processes, and data.</p>
     </div>
   )
 }

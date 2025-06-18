@@ -103,20 +103,27 @@
   --sidebar-ring: var(--moloch-400);
 
   /* Typography from Raid Guild Design System */
-  --font-display: 'Maziusdisplay', serif;
+  --font-display: 'Fratelli', serif;
   --font-heading: 'Maziusdisplay', serif;
   --font-body: 'Goudybookletter 1911', 'Satoshi', 'Inter', Arial, sans-serif;
   --font-mono: 'JetBrains Mono', 'Menlo', 'Monaco', 'Consolas', monospace;
+  --font-title: 'Alchemion', serif;
 }
 
 body {
   font-family: var(--font-body);
   color: var(--foreground);
   background: var(--background);
+  font-size: 24px;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
+}
+
+h1.font-title,
+.font-title {
+  font-family: var(--font-title) !important;
 }
 
 .display-lg, .display-md, .display-sm {
